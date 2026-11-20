@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aipricehistory": {
+      "url": "https://aipricehistory.com/api/mcp",
+      "headers": { "Authorization": "Bearer YOUR_KEY" }
+    }
+  }
+}
