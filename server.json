@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.aipricehistory/amazon-price-tracker",
+  "title": "Amazon Price Tracker",
+  "description": "Amazon price history by ASIN: current, lowest, highest, average and dated price changes.",
+  "version": "1.0.0",
+  "websiteUrl": "https://aipricehistory.com",
+  "repository": {
+    "url": "https://github.com/CGGz4/amazon-price-history-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aipricehistory.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer YOUR_KEY. Create a free access key at https://aipricehistory.com/mcp",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
